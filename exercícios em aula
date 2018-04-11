@@ -1,0 +1,206 @@
+
+1)
+<form name='form' method='post' action=' '>
+digite um valor <br>
+<input type='number' name='valor' /><br>
+digite um valor <br>
+<input type='number' name='valor1' />
+<br>
+<input type="submit" value="enviar" />
+</form>
+
+<?php
+$valor = $_POST['valor'];
+$valor1 = $_POST['valor1'];
+
+$soma = $valor+$valor1;
+
+if($soma>20){
+$resp = $soma+8;
+echo $resp ;
+
+}else if($soma<=20){
+$resp = $soma-5;
+echo $resp ;
+
+}
+?>
+
+===================================================
+
+2)
+<form name='form' method='post' action=' '>
+digite um valor <br>
+<input type='number' name='valor' /><br>
+<br>
+<input type="submit" value="enviar" />
+</form>
+
+<?php
+$valor = $_POST['valor'];
+
+if($valor % 10 == 0){
+echo "o valor e divisivel por 10";
+}else if($valor % 5 == 0){
+echo "o valor e divisivel por 5";
+}else if($valor % 2 == 0){
+echo "o valor e divisivel por 2";
+}else{
+echo "O valor nao e divisivel por 10, 5, 2";
+}
+?>
+
+==================================================
+
+3) 
+<form name='form' method='post' action=' '>
+Escreva o seu nome:<br>
+<input type='text' name='nome' /><br>
+Escreva a sua idade: <br>
+<input type='number' name='valor' /><br>
+masculino
+<input type='radio' name='sexo' value="Masculino"><br>
+feminino
+<input type='radio' name='sexo' value="Feminino">
+
+
+<br>
+<input type="submit" value="enviar" />
+</form>
+
+<?php
+$valor = $_POST['valor'];
+$sexo = $_POST['sexo'];
+
+if (($sexo == Feminino) && ($valor < 25)){
+echo "Aceita!";
+}else {
+echo "Não aceita!";
+}
+?> 
+
+==================================================
+
+4)
+<form name='form' method='post' action=' '>
+digite tres valores  <br>
+primeiro valor  <br>
+<input type='number' name='valor' /><br>
+segundo valor  <br>
+<input type='number' name='valorum' /><br>
+terceiro valor  <br>
+<input type='number' name='valordois' /><br>
+<input type="submit" value="enviar" />
+</form>
+
+<?php
+$valor = $_POST['valor'];
+$valorum = $_POST['valorum'];
+$valordois = $_POST['valordois'];
+
+echo "$valordois <br>";
+echo "$valorum <br>";
+echo "$valor <br> ";
+?>
+==================================================
+5)
+<form name='form' method='post' action=' '>
+Escreva três valores:  <br>
+1º valor:  <br>
+<input type='number' name='valor1' /><br>
+2º valor: <br>
+<input type='number' name='valor2' /><br>
+3º valor: <br>
+<input type='number' name='valor3' /><br>
+<input type="submit" value="enviar" />
+</form>
+
+<?php
+$valor1 = $_POST['valor1'];
+$valor2 = $_POST['valor2'];
+$valor3 = $_POST['valor3'];
+
+if($valor1 == $valor2 && $valor2 == $valor3){
+echo "O triângulo equilátero!";
+}else if(($valor1 == $valor2 && $valor2 <> $valor3) or ($valor1 == $valor3) && ($valor3 <> $valor2)){
+echo "O triângulo é isósceles!";
+}else{
+echo "O triângulo é escaleno!";
+}
+?>
+
+=================================================
+
+6)
+<form method='post' name='exercicios'  action=''>
+<center>
+<font size="3" color='green' />
+Digite o numero que deseja saber o mês<br>
+<input type='text' name='numero' /><br>
+<input type='submit' value='enviar' />
+</font>
+<center>
+</form>
+
+<?php
+$numero = $_POST['numero'];
+if ($numero == 1){
+	echo "janeiro";
+}else if($numero == 2){
+	echo "Fevereiro";
+}else if($numero == 3){
+	echo "Março";
+}else if($numero == 4){
+	echo "Abril";
+}else if($numero == 5){
+	echo "Maio";
+}else if($numero == 6){
+	echo "Junho";
+}else if($numero == 7){
+	echo "Julho";
+}else if($numero == 8){
+	echo "Agosto";
+}else if($numero == 9){
+	echo "Setembro";
+}else if($numero == 10){
+	echo "Outubro";
+}else if($numero == 11){
+	echo "Novembro";
+}else if($numero == 12){
+	echo "Dezembro";
+}else{
+	echo "Não existe mês com este número";
+}
+
+?>
+
+
+======================================================================
+
+7)
+<form method='post' name='exercicios'  action=''>
+<center>
+<font size="3" color='green' />
+Qual o nome do livro <br>
+<input type='text' name='livro' /><br>
+
+Você é aluno ou Professor <br>
+<input type='text' name='nome' /><br>
+
+<input type='submit' value='enviar' />
+</font>
+<center>
+</form>
+
+<?php
+$livro = $_POST['livro'];
+$nome = $_POST['nome'];
+if($nome==professor){
+	echo "Você tem atè 10 dia para a entrega do livro";
+}else if ($nome==aluno){
+	echo "Você tem até 3 dias uteis para a entrega de seu livro";
+}else{
+	echo "Dados incorretos";
+}
+
+?>
