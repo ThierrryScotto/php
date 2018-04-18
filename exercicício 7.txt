@@ -1,0 +1,26 @@
+<form method='post' name='exercicios'  action=''>
+<center>
+<font size="3" color='green' />
+Qual o nome do livro <br>
+<input type='text' name='livro' /><br>
+
+Você é aluno ou Professor <br>
+<input type='text' name='nome' /><br>
+
+<input type='submit' value='enviar' />
+</font>
+<center>
+</form>
+
+<?php
+$livro = $_POST['livro'];
+$nome = $_POST['nome'];
+if($nome==professor){
+	echo "Você tem atè 10 dia para a entrega do livro";
+}else if ($nome==aluno){
+	echo "Você tem até 3 dias uteis para a entrega de seu livro";
+}else{
+	echo "Dados incorretos";
+}
+
+?>

@@ -1,0 +1,22 @@
+<form name='form' method='post' action=' '>
+digite um valor <br>
+<input type='number' name='valor' /><br>
+<br>
+<input type="submit" value="enviar" />
+</form>
+
+<?php
+$valor = $_POST['valor'];
+
+if($valor % 10 == 0){
+echo "o valor e divisivel por 10";
+}else if($valor % 5 == 0){
+echo "o valor e divisivel por 5";
+}else if($valor % 2 == 0){
+echo "o valor e divisivel por 2";
+}else{
+echo "O valor nao e divisivel por 10, 5, 2";
+}
+?>
+
+
