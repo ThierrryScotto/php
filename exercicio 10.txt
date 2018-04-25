@@ -1,0 +1,15 @@
+<center>
+<form name='lol' method='post' action=''>
+<input type='text'  name='nome' />
+<input type='submit' value='enviar' />
+<form/>
+</center>
+<br>
+
+<?php
+$nome = $_POST['nome'];
+echo "$nome <br>";
+echo "$nome $nome <br>";
+echo "$nome $nome $nome <br>";
+echo "$nome $nome $nome $nome <br>";
+?>

@@ -1,0 +1,48 @@
+		<form action='' name='lol' method='POST'>
+		<center>
+			Digite 1º numero:<br>
+            <input type="number" name="num1" />
+			Digite 2º numero:<br>
+            <input type="number" name="num2" />
+			Digite 3º numero:<br>
+            <input type="number" name="num3" />
+			Digite 4º numero:<br>
+            <input type="number" name="num4" />
+			Digite 5º numero:<br>
+            <input type="number" name="num5" />
+			Digite 6º numero:<br>
+            <input type="number" name="num6" />
+			Digite 7º numero:<br>
+            <input type="number" name="num7" />
+			Digite 8º numero:<br>
+            <input type="number" name="num8" />
+			Digite 9º numero:<br>
+            <input type="number" name="num9" />
+			Digite 10º numero:<br>
+            <input type="number" name="num10" />
+			Digite 11º numero:<br>
+            <input type="number" name="num11" />
+			Digite 12º numero:<br>
+            <input type="number" name="num12" />
+			Digite 13º numero:<br>
+            <input type="number" name="num13" />
+			Digite 14º numero:<br>
+            <input type="number" name="num14" />
+			Digite 15º numero:<br>
+            <input type="number" name="num15" />
+			<input type="submit" value="Enviar" />
+      </center>
+		</form>
+		<?php
+		$num;
+		if (count($_POST)>0){
+			for ($i=1; $i<16; $i++){
+				$num=$_POST["num$i"];
+				if ($num % 2 == 0) {
+					echo "<h4 align='center'>$num é par! ";
+				}else{
+					echo "<h4 align='center'>$num é ímpar! </h1>";
+				}
+			}
+		}
+		?>
