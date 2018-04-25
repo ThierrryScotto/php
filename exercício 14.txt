@@ -1,34 +1,34 @@
 		<form action='' name='lol' method='POST'>
 		<center>
-			Digite 1บ numero:<br>
+			Digite 1ยบ numero:<br>
             <input type="number" name="num1" />
-			Digite 2บ numero:<br>
+			Digite 2ยบ numero:<br>
             <input type="number" name="num2" />
-			Digite 3บ numero:<br>
+			Digite 3ยบ numero:<br>
             <input type="number" name="num3" />
-			Digite 4บ numero:<br>
+			Digite 4ยบ numero:<br>
             <input type="number" name="num4" />
-			Digite 5บ numero:<br>
+			Digite 5ยบ numero:<br>
             <input type="number" name="num5" />
-			Digite 6บ numero:<br>
+			Digite 6ยบ numero:<br>
             <input type="number" name="num6" />
-			Digite 7บ numero:<br>
+			Digite 7ยบ numero:<br>
             <input type="number" name="num7" />
-			Digite 8บ numero:<br>
+			Digite 8ยบ numero:<br>
             <input type="number" name="num8" />
-			Digite 9บ numero:<br>
+			Digite 9ยบ numero:<br>
             <input type="number" name="num9" />
-			Digite 10บ numero:<br>
+			Digite 10ยบ numero:<br>
             <input type="number" name="num10" />
-			Digite 11บ numero:<br>
+			Digite 11ยบ numero:<br>
             <input type="number" name="num11" />
-			Digite 12บ numero:<br>
+			Digite 12ยบ numero:<br>
             <input type="number" name="num12" />
-			Digite 13บ numero:<br>
+			Digite 13ยบ numero:<br>
             <input type="number" name="num13" />
-			Digite 14บ numero:<br>
+			Digite 14ยบ numero:<br>
             <input type="number" name="num14" />
-			Digite 15บ numero:<br>
+			Digite 15ยบ numero:<br>
             <input type="number" name="num15" />
 			<input type="submit" value="Enviar" />
       </center>
@@ -39,9 +39,9 @@
 			for ($i=1; $i<16; $i++){
 				$num=$_POST["num$i"];
 				if ($num % 2 == 0) {
-					echo "<h4 align='center'>$num ้ par! ";
+					echo "<h4 align='center'>$num รฉ par! ";
 				}else{
-					echo "<h4 align='center'>$num ้ ํmpar! </h1>";
+					echo "<h4 align='center'>$num รฉ รญmpar! </h1>";
 				}
 			}
 		}
